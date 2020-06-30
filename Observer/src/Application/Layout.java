@@ -45,6 +45,7 @@ public class Layout {
 		return;
 	}
 	//Métodos a utilizar con los pointcuts de la clase EventAspect del paquete aspectPackage
+	
 	public String activeOrange()
 	{
 		root.setStyle("-fx-background-color:orange;");

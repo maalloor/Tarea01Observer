@@ -15,13 +15,13 @@ public class Tarea01Observer extends Application {
 		primaryStage.setTitle("Tarea01Observer");
 		
 		layout.getBtnOrange().setOnAction(e->{
-			layout.activeOrange();
+			System.out.println(layout.activeOrange());
 		});
 		layout.getBtnCyan().setOnAction(e->{
-			layout.activeCyan();
+			System.out.println(layout.activeCyan());
 		});
 		layout.getBtnYellow().setOnAction(e->{
-			layout.activeYellow();
+			System.out.println(layout.activeYellow());
 		});
 		primaryStage.setScene(layout.getScene());
 		primaryStage.show();
