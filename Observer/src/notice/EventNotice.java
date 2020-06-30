@@ -1,11 +1,11 @@
 package notice;
 
+import java.util.EventListener;
 
 public class EventNotice implements EventListener{
 
-	@Override
 	public void update() {
-		// TODO Auto-generated method stub
+		System.out.println("");
 		
 	}
 	
