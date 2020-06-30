@@ -1,5 +1,8 @@
-package Observer;
+package observer;
 
-public class Listener {
-
+public abstract class Listener {
+	
+	protected Publisher observador;
+	
+	public abstract void update();
 }
