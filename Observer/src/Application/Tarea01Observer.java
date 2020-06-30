@@ -15,13 +15,13 @@ public class Tarea01Observer extends Application {
 		primaryStage.setTitle("Tarea01Observer");
 		
 		layout.getBtnOrange().setOnAction(e->{
-			layout.getRoot().setStyle("-fx-background-color:orange;");
+			layout.activeOrange();
 		});
 		layout.getBtnCyan().setOnAction(e->{
-			layout.getRoot().setStyle("-fx-background-color:cyan;");
+			layout.activeCyan();
 		});
 		layout.getBtnYellow().setOnAction(e->{
-			layout.getRoot().setStyle("-fx-background-color:yellow;");
+			layout.activeYellow();
 		});
 		primaryStage.setScene(layout.getScene());
 		primaryStage.show();
