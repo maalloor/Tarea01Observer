@@ -24,6 +24,7 @@ public class Tarea01Observer extends Application {
 			System.out.println(layout.activeYellow());
 		});
 		primaryStage.setScene(layout.getScene());
+		primaryStage.setMaximized(true);
 		primaryStage.show();
 		
 	}
