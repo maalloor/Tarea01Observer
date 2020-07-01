@@ -19,8 +19,9 @@ public class Layout {
 	private Button btnCyan;
 	private Button btnYellow;
 	private Scene scene;
+	public static Label aviso_global;
 	public static Label aviso;
-	public ImageView imgGif;
+	private ImageView imgGif;
 	
 	public Layout()
 	{
@@ -35,7 +36,8 @@ public class Layout {
 		btnOrange = new Button("Color Orange");
 		btnCyan = new Button("Color Cyan");
 		btnYellow = new Button("Color Yellow");
-		aviso = new Label("");
+		aviso = new Label("ELIJA UN COLOR");
+		aviso_global = new Label("");
 		imgGif = new ImageView("gif/inicio.gif");
 		return;
 	}
@@ -44,7 +46,7 @@ public class Layout {
 	{
 		hButtons.getChildren().addAll(btnOrange,btnCyan,btnYellow);
 		hButtons.setAlignment(Pos.CENTER);
-		root.getChildren().addAll(hButtons,aviso,imgGif);
+		root.getChildren().addAll(hButtons,aviso,aviso_global,imgGif);
 		root.setAlignment(Pos.CENTER);
 		return;
 	}
@@ -115,7 +117,4 @@ public class Layout {
 	{
 		return btnYellow;
 	}
-	
-	
-	
 }
